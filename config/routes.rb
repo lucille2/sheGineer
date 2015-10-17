@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  get 'public/index'
+  get 'public/index' 
+  get 'about'  => 'public#about'
+  get 'mysheroes' => 'public#mysheroes'
+  get  'learn' => 'public#learn'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
