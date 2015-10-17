@@ -11,7 +11,7 @@
 
         
         <!-- is this for the swipe?-->
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+		<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">-->
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
 
@@ -23,14 +23,15 @@
 
 
   <body>
-    <a data-toggle="tab" href="#home"><%= link_to image_tag("logo.png") %></a>
+
+    <a data-toggle="tab" href="#home" class="ui-link"><img src="/assets/logo-eca47390c67f8a707bfc0fe199070062bbad2e1c6b18d8b1c2ad78ee396fef5d.png" alt="Logo eca47390c67f8a707bfc0fe199070062bbad2e1c6b18d8b1c2ad78ee396fef5d"></a>
 
     <h1>sheGineers</h1> 
 
     <ul class="nav nav-tabs">
     <li><a data-toggle="tab" href="#home">Home</a></li>
 	  <li><a data-toggle="tab" href="#about">About</a></li>
-	  <li><a data-toggle="tab" href="#my she-roes">My She-roes</a></li>
+	  <li><a data-toggle="tab" href="#my-she-roes">My She-roes</a></li>
 	  <li><a data-toggle="tab" href="#learn">Learn</a></li>
     <li><a data-toggle="tab" href="#become">Become a SheGineer!</a></li>
 	</ul>
@@ -63,33 +64,65 @@
     <div role="tabpanel" class="tab-pane" id="become">
       <h1>Do you want to be an inspiration for women? Then we'd love to have you!</h1>
       <form action="/new_shero" method="post">
-          First name:<br>
-          <input type="text" name="first_name">
-          <br>
-          Last name:<br>
-          <input type="text" name="last_name">
-          Title:<br>
-          <input type="text" name="title">
-          Company:<br>
-          <input type="text" name="title">
-          Bio:<br>
-          <input type="text" name="bio">
-          Facebook:<br>
-          <input type="text" name="facebook_url">
-          Twitter:<br>
-          <input type="text" name="twitter_url">
-          <br>
-          LinkedIn:<br>
-          <input type="text" name="linkedin">
-          Wiki:<br>
-          <input type="text" name="wiki">
-          Website:<br>
-          <input type="text" name="website">
-          Pic:<br>
-          <input type="submit" value="Submit">
+          <div class="form-group">
+            <label>First name:</label>
+            <input class="form-control" type="text" name="first_name">
+          </div>
+          <div class="form-group">
+            <label>Last name:</label>
+            <input class="form-control" type="text" name="last_name">
+          </div>
+          <div class="form-group">
+            <label>Title:</label>
+            <input class="form-control" type="text" name="title">
+          </div>
+          <div class="form-group">
+            <label>Company:</label>
+            <input class="form-control" type="text" name="company">
+          </div>
+          <div class="form-group">
+            <label>Bio:</label>
+            <input class="form-control" type="text" name="bio">
+          </div>
+          <div class="form-group">
+            <label>Facebook:</label>
+            <input class="form-control" type="text" name="facebook_url">
+          </div>
+          <div class="form-group">
+            <label>Twitter:</label>
+            <input class="form-control" type="text" name="twitter_url">
+          </div>
+          <div class="form-group">
+            <label>LinkedIn:</label>
+            <input class="form-control" type="text" name="linkedin">
+          </div>
+          <div class="form-group">
+            <label>Wiki:</label>
+            <input class="form-control" type="text" name="wiki">
+          </div>
+          <div class="form-group">
+            <label>Website:</label>
+            <input class="form-control" type="text" name="website">
+          </div>
+          
+             <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>
-    <div role="tabpanel" class="tab-pane" id="my she-roes"></div>
+    <div role="tabpanel" class="tab-pane" id="my-she-roes">
+		<% @sheroes.each do |shero| %>
+        		<div class="panel panel-primary">
+					<div class="panel-heading">
+		    			<h3 class="panel-title"><%= shero.full_name %></h3>
+		    			<h2 class="panel-title"><%= shero.title %></h2>
+		  			</div>
+		  			<div class="panel-body">
+		    			<img src="<%= shero.pic %>" class="img-rounded" alt="<%= shero.full_name %>" width="300" height="300"> 
+		    			<div><%= shero.bio %></div>
+
+		  			</div>
+			</div>
+      		<% end %>
+    </div>
     <div role="tabpanel" class="tab-pane" id="learn">
       <h3>Further Learning</h3>
       <p>Learn to Code:</p>
