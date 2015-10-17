@@ -148,3 +148,7 @@ h3 .panel-title {
   font-weight: 700px;
   color: #ffffff;
 }
+.buddy.buddy-content img {
+  display: block;
+  position:center;
+}
