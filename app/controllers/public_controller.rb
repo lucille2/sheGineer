@@ -1,7 +1,8 @@
 class PublicController < ApplicationController
   def index
-  	data = read_json_data
-  	@sheroes = data.map{|shero| Shero.new(JSON.parse(shero))}
+  	@sheroes = read_json_data.map do |shero|
+  		Shero.new(shero)
+  	end
   end
 
    def about
@@ -16,7 +17,8 @@ class PublicController < ApplicationController
   def read_json_data
   	path = "#{Rails.root}/app/assets/json/Women.json"
   	file = File.read(path)
-  	JSON.parse(file)
+  	data = JSON.parse(file)
+  	data['womenInTech']
   end
 
 end
