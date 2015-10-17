@@ -30,6 +30,7 @@
 	  <li><a data-toggle="tab" href="#about">About</a></li>
 	  <li><a data-toggle="tab" href="#my she-roes">My She-roes</a></li>
 	  <li><a data-toggle="tab" href="#learn">Learn</a></li>
+    <li><a data-toggle="tab" href="#become">Become a SheGineer!</a></li>
 	</ul>
   
 	 <div id="container">
@@ -47,9 +48,43 @@
         </div>
       <% end %>
     </div>
+
     <div role="tabpanel" class="tab-pane" id="about"></div>
     <div role="tabpanel" class="tab-pane" id="my she-roes"></div>
     <div role="tabpanel" class="tab-pane" id="learn"></div>
+
+    
+    <div role="tabpanel" class="tab-pane" id="my she-roes">...</div>
+    <div role="tabpanel" class="tab-pane" id="learn">...</div>
+    <div role="tabpanel" class="tab-pane" id="become">
+      <h1>Do you want to be an inspiration for women? Then we'd love to have you!</h1>
+      <form action="/new_shero" method="post">
+          First name:<br>
+          <input type="text" name="first_name">
+          <br>
+          Last name:<br>
+          <input type="text" name="last_name">
+          Title:<br>
+          <input type="text" name="title">
+          Company:<br>
+          <input type="text" name="title">
+          Bio:<br>
+          <input type="text" name="bio">
+          Facebook:<br>
+          <input type="text" name="facebook_url">
+          Twitter:<br>
+          <input type="text" name="twitter_url">
+          <br>
+          LinkedIn:<br>
+          <input type="text" name="linkedin">
+          Wiki:<br>
+          <input type="text" name="wiki">
+          Website:<br>
+          <input type="text" name="website">
+          Pic:<br>
+          <input type="submit" value="Submit">
+      </form>
+    </div>
   </div>
   	</div>
 
