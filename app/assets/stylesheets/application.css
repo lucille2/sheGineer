@@ -102,9 +102,8 @@ h1 {
   display: inline-block;
 
 }
-h2, h3, h4{
+h1, h2, h3, h4{
   color: black;
-  
 }
 
 
@@ -147,6 +146,10 @@ h2, h3, h4{
 h3 .panel-title {
   font-weight: 700px;
   color: #ffffff;
+}
+
+.buddy h1,.buddy h2, .buddy h3, .buddy h4 {
+  color: black;
 }
 .buddy.buddy-content img {
   display: block;
