@@ -49,16 +49,17 @@
     <div role="tabpanel" class="tab-pane" id="home"></div>
 
     <div role="tabpanel" class="tab-pane" id="about">
-
-    
-      <h3>Wouldn't it be great if you have a location where you could find out about the <i>amazing women in STEM fields?</i></h3>
-      <h3><i>WAIT NO LONGER! SheGineer is here!</i></h3>
-
-    <p class="lead">
-
-      SheGineer is an app that one can learn all about the strong STEM women out in the world and get excited to be in STEM. Most people have heard of Steve Jobs, Bill Gates but have you heard of Marissa Meyers or Fabiola Gianotti? Well now you can! The inspiration for this effort was to have a place where young women could find strong women to look up to and potentially try to follow their same paths.
-    </p>
-
+      <div class="buddy buddy-content" style="display:block">
+        <h3>Is this for you?</h3>
+        <p>
+          Wouldn't it be great if you have a location where you could find out about the <i>amazing women in STEM fields?</i>
+        </p>
+        <h4><i>WAIT NO LONGER! SheGineer is here!</i></h4>
+        <p>
+          SheGineer is an app that one can learn all about the strong STEM women out in the world and get excited to be in STEM. Most people have heard of Steve Jobs, Bill Gates but have you heard of Marissa Meyers or Fabiola Gianotti? Well now you can! The inspiration for this effort was to have a place where young women could find strong women to look up to and potentially try to follow their same paths.
+        </p>
+        <img src="http://www.gamesprays.com/images/icons/blu-engineer-icon-3289_preview.png">
+      </div>
     </div>
     <div role="tabpanel" class="tab-pane" id="become">
       <h1>Do you want to be an inspiration for women? Then we'd love to have you!</h1>
@@ -109,16 +110,16 @@
     </div>
     <div role="tabpanel" class="tab-pane" id="my-she-roes">
 		<% @sheroes.each do |shero| %>
-        		<div class="panel panel-primary">
+        	<div class="panel panel-primary">
 					<div class="panel-heading">
 		    			<h3 class="panel-title"><%= shero.full_name %></h3>
 		    			<h3 class="panel-title"><%= shero.title %></h3>
-		  			</div>
-		  			<div class="panel-body">
-		    			<img src="<%= shero.pic %>" class="img-rounded" alt="<%= shero.full_name %>" width="300" height="300"> 
-		    			<div><%= shero.bio %></div>
+	  			</div>
+	  			<div class="panel-body">
+	    			<img src="<%= shero.pic %>" class="img-rounded" alt="<%= shero.full_name %>" width="300" height="300"> 
+	    			<div><%= shero.bio %></div>
 
-		  			</div>
+	  			</div>
 			</div>
       		<% end %>
     </div>
