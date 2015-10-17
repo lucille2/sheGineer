@@ -10,12 +10,10 @@
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
 
+
 		<!-- Bootstrap -->
 			<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
-		<!-- jQuery library -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 		<!-- Latest compiled JavaScript -->
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -41,7 +39,38 @@
 	    <div class="buddy"><div class="avatar" style="display: block; background-image: url(http://static.168ora.hu/db/09/AF/orban-d0001C9AFa1ba9618c180.jpg)"></div></div>  
   	</div>
 
+<script>
+$(document).ready(function(){
 
+
+    $(".buddy").on("swiperight",function(){
+      alert("I'm here");
+      $(this).addClass('rotate-left').delay(700).fadeOut(1);
+      $('.buddy').find('.status').remove();
+
+      $(this).append('<div class="status like">Like!</div>');      
+      if ( $(this).is(':last-child') ) {
+        $('.buddy:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
+       } else {
+          $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
+       }
+    });  
+
+   $(".buddy").on("swipeleft",function(){
+    $(this).addClass('rotate-right').delay(700).fadeOut(1);
+    $('.buddy').find('.status').remove();
+    $(this).append('<div class="status dislike">Dislike!</div>');
+
+    if ( $(this).is(':last-child') ) {
+     $('.buddy:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
+      alert('Na-na!');
+     } else {
+        $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
+    } 
+  });
+
+});
+</script>
     
     
   </body>

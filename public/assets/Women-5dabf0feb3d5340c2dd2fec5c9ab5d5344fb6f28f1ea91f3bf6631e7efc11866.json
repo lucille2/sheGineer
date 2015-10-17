@@ -1,0 +1,69 @@
+{
+    "womenInTech": [
+        {
+            "pic": "https://media.licdn.com/media/p/5/005/059/160/10fdf96.jpg",
+            "firstName": "Gayle L.",
+            "lastName": "McDowell",
+            "title": "Founder, Author, Programmer, Consultant, Speaker",
+            "company": "CareerCup",
+            "bio": "",
+            "facebookURL": "https://www.facebook.com/gayle",
+            "twitterUrl": "https://twitter.com/gayle?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+            "linkedIn": "https://www.linkedin.com/in/gaylemcd",
+            "wiki": "https://en.wikipedia.org/wiki/User:Vintelok/Gayle_Laakmann_McDowell",
+            "website": "http://www.gayle.com/"
+        },
+        {
+            "pic": "https://media.licdn.com/media/p/3/000/28c/383/28b0d6f.jpg",
+            "firstName": "Kyla",
+            "lastName": "McMullen",
+            "title": "Assistant Professor",
+            "company": "University of Florida",
+            "bio": "",
+            "facebookURL": "https://www.facebook.com/natural.woman",
+            "twitterUrl": "https://twitter.com/Dr_Kyla?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+            "linkedIn": "https://www.linkedin.com/pub/kyla-mcmullen/22/22/169",
+            "wiki": "",
+            "website": "http://www.kylamcmullen.com/Kyla_McMullen/Research.html"
+        },
+        {
+            "pic": "https://media.licdn.com/media/p/7/000/1c5/388/229d31a.jpg",
+            "firstName": "Window",
+            "lastName": "Snyder",
+            "title": "Chief Security Officer",
+            "company": "Fastly",
+            "bio": "",
+            "facebookURL": "",
+            "twitterUrl": "https://twitter.com/window?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+            "linkedIn": "https://www.linkedin.com/profile/view?id=ACgAAAAbkkkBDQop6IprAtgmJbh5j8mU2iqK4rY&authType=name&authToken=J5Eh",
+            "wiki": "https://en.wikipedia.org/wiki/Window_Snyder",
+            "website": ""
+        },
+        {
+            "pic": "https://media.licdn.com/media/p/3/000/09a/11b/2bdd71b.jpg",
+            "firstName": "Nanea",
+            "lastName": "Reeves",
+            "title": "President & COO",
+            "company": "textPlus",
+            "bio": "",
+            "facebookURL": "https://www.facebook.com/nanea.reeves",
+            "twitterUrl": "https://twitter.com/nanea?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+            "linkedIn": "https://www.linkedin.com/in/naneareeves",
+            "wiki": "",
+            "website": ""
+        },
+        {
+            "pic": "http://paolaelefante.com/wp-content/uploads/2015/01/fabiola-gianotti.jpg",
+            "firstName": "Fabiola",
+            "lastName": "Gianotti",
+            "title": "Experimental Particle Physicist",
+            "company": "CERN",
+            "bio": "",
+            "facebookURL": "https://www.facebook.com/FabiolaGiannottiPresidenteDellaRepubblica",
+            "twitterUrl": "https://twitter.com/fabiolagianotti",
+            "linkedIn": "",
+            "wiki": "https://en.wikipedia.org/wiki/Fabiola_Gianotti",
+            "website": ""
+        }
+    ]
+}
