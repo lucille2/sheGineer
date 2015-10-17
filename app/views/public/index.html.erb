@@ -46,7 +46,7 @@
       <% end %>
     </div>
 
-    <div role="tabpanel" class="tab-pane" id="home"></div>      
+    <div role="tabpanel" class="tab-pane" id="home"></div>
 
     <div role="tabpanel" class="tab-pane" id="about">
       <h2>Wouldn't it be great if you have a location where you could find out about the amazing women in STEM fields? WAIT NO LONGER! SheGineer is here!
@@ -54,7 +54,7 @@
 
       <h3>SheGineer is an app that one can learn all about the strong STEM women out in the world and get excited to be in STEM. Most people have heard of Steve Jobs, Bill Gates but have you heard of Marissa Meyers or Fabiola Gianotti? Well now you can! The inspiration for this effort was to have a place where young women could find strong women to look up to and potentially try to follow their same paths.</h3>
 
-    </div>    
+    </div>
     <div role="tabpanel" class="tab-pane" id="become">
       <h1>Do you want to be an inspiration for women? Then we'd love to have you!</h1>
       <form action="/new_shero" method="post">
@@ -138,60 +138,6 @@
   </div>
 
 
-<script>
-$(document).ready(function(){
-  $('#someTab').tab('show');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    $(".buddy").on("swiperight",function(){
-      $(this).addClass('rotate-left').delay(700).fadeOut(1);
-      $('.buddy').find('.status').remove();
-
-      $(this).append('<div class="status like">Like!</div>');      
-      if ( $(this).is(':last-child') ) {
-        $('.buddy:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
-       } else {
-          $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
-       }
-    });  
-
-   $(".buddy").on("swipeleft",function(){
-    $(this).addClass('rotate-right').delay(700).fadeOut(1);
-    $('.buddy').find('.status').remove();
-    $(this).append('<div class="status dislike">Dislike!</div>');
-
-    if ( $(this).is(':last-child') ) {
-     $('.buddy:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
-      alert('Na-na!');
-     } else {
-        $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
-    } 
-  });
-
-});
-</script>
-    
-    
   </body>
 
 
