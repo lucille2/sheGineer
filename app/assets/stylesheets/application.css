@@ -13,9 +13,9 @@
  *= require_tree .
  *= require_self
  */
-#container {
+#container2 {
   width: 500px;
-  margin: auto !important;
+  margin: auto;
   display: block;
   height: 500px;
   position: relative;
@@ -113,11 +113,29 @@ h2, h3, h4{
   float: right;
 }
 
+
 .nav-tabs>li>a{
   margin-top:40px;
   color:#1A79B2;
 }
 
+
 .links {
   text-decoration: none;
+}
+
+.buddy p {
+
+}
+.buddy-content {
+  color: #000;
+}
+.buddy-content p {
+  color:#000;
+}
+.buddy-content h3 {
+  text-align: center;
+}
+.buddy.buddy-content {
+  display: block;
 }

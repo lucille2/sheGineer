@@ -1,12 +1,12 @@
-body {
-	font-size: 18px;
-	font-family: Arial;
-}
-h1 {
-	display: inline-block;
-}
-
-.nav {
-	display: inline-block;
-	float: right;
+div .wrap {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    color: #fff;
+    padding: 20px;
+    width: 398px;
+    height: 680px;
+    top: 50px;
+    left: 50px;
+    position: absolute;
 }
