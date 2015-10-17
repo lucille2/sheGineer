@@ -35,7 +35,7 @@
   color: #fff;
   padding: 20px;
   width: 360px;
-  height: 360px;
+  height: 560px;
   top: 50px;
   left: 50px;
   position: absolute;
@@ -97,7 +97,13 @@
 
 h1 {
   display: inline-block;
+
 }
+h2, h3, h4{
+  color: black !important;
+  
+}
+
 
 .nav {
   display: inline-block;
