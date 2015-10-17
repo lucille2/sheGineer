@@ -1,7 +1,7 @@
 {
     "womenInTech": [
         {
-            "pic": "",
+            "pic": "https://media.licdn.com/media/p/5/005/059/160/10fdf96.jpg",
             "firstName": "Gayle L.",
             "lastName": "McDowell",
             "title": "Founder, Author, Programmer, Consultant, Speaker",
@@ -14,7 +14,7 @@
             "website": "http://www.gayle.com/"
         },
         {
-            "pic": "",
+            "pic": "https://media.licdn.com/media/p/3/000/28c/383/28b0d6f.jpg",
             "firstName": "Kyla",
             "lastName": "McMullen",
             "title": "Assistant Professor",
@@ -27,7 +27,7 @@
             "website": "http://www.kylamcmullen.com/Kyla_McMullen/Research.html"
         },
         {
-            "pic": "",
+            "pic": "https://media.licdn.com/media/p/7/000/1c5/388/229d31a.jpg",
             "firstName": "Window",
             "lastName": "Snyder",
             "title": "Chief Security Officer",
@@ -40,7 +40,7 @@
             "website": ""
         },
         {
-            "pic": "",
+            "pic": "https://media.licdn.com/media/p/3/000/09a/11b/2bdd71b.jpg",
             "firstName": "Nanea",
             "lastName": "Reeves",
             "title": "President & COO",
@@ -53,7 +53,7 @@
             "website": ""
         },
         {
-            "pic": "",
+            "pic": "http://paolaelefante.com/wp-content/uploads/2015/01/fabiola-gianotti.jpg",
             "firstName": "Fabiola",
             "lastName": "Gianotti",
             "title": "Experimental Particle Physicist",
