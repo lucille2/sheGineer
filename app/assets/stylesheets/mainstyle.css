@@ -1,0 +1,12 @@
+body {
+	font-size: 18px;
+	font-family: Arial;
+}
+h1 {
+	display: inline-block;
+}
+
+.nav {
+	display: inline-block;
+	float: right;
+}
