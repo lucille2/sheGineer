@@ -65,6 +65,10 @@
   background-size: 100% auto !important;
   background-position: center;
  background-repeat: no-repeat;
+
+}
+.avatar.override{
+  -moz-box-sizing: content-box !important;
 }
 .like {
   border-radius: 5px;
