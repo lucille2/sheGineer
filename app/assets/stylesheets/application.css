@@ -90,3 +90,13 @@
   left: 40px;
   text-shadow: none;
 }
+
+h1 {
+  display: inline-block;
+}
+
+.nav {
+  display: inline-block;
+  float: right;
+  
+}
