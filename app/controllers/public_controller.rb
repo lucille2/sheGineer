@@ -21,4 +21,12 @@ class PublicController < ApplicationController
   	data['womenInTech']
   end
 
+  def new_shero
+    Shero.new(scrub_params(params)) unless params.blank? or params['first_name'].blank?
+  end
+
+  def scrub_params(params={})
+    ActiveSupport::HashWithIndifferentAccess.new(params).except(:controller, :action)
+  end
+
 end

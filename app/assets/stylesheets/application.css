@@ -15,7 +15,7 @@
  */
 #container {
   width: 500px;
-  margin: auto !important;
+  margin: auto;
   display: block;
   height: 500px;
   position: relative;
@@ -34,8 +34,8 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   color: #fff;
   padding: 20px;
-  width: 360px;
-  height: 560px;
+  width: 398px;
+  height: 680px;
   top: 50px;
   left: 50px;
   position: absolute;
@@ -70,6 +70,9 @@
 .avatar.override{
   -moz-box-sizing: content-box !important;
 }
+span{
+  color:black;
+}
 .like {
   border-radius: 5px;
   padding: 5px 10px;
@@ -99,13 +102,56 @@ h1 {
   display: inline-block;
 
 }
-h2, h3, h4{
-  color: black !important;
-  
+h1, h2, h3, h4{
+  color: black;
 }
 
 
 .nav {
   display: inline-block;
   float: right;
+}
+
+
+.nav-tabs>li>a{
+  margin-top:40px;
+  color:#1A79B2;
+}
+
+
+.links {
+  text-decoration: none;
+}
+
+.buddy p {
+
+}
+.buddy-content {
+  color: #000;
+}
+.buddy-content p {
+  color:#000;
+}
+.buddy-content h3 {
+  text-align: center;
+}
+.buddy.buddy-content {
+  display: block;
+}
+
+.panel-body {
+  text-align: center;
+}
+
+h3 .panel-title {
+  font-weight: 700px;
+  color: #ffffff;
+}
+
+.buddy h1,.buddy h2, .buddy h3, .buddy h4 {
+  color: black;
+}
+.buddy.buddy-content img {
+  display: block;
+  position:center;
 }

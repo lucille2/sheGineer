@@ -1,112 +1,156 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SheGineer</title>
-        <!-- responsiveness -->
     	<meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700|Karla|The+Girl+Next+Door|Clicker+Script' rel='stylesheet' type='text/css'>
     	<!-- Bootstrap -->
 			<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> 
 
         
         <!-- is this for the swipe?-->
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+		<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">-->
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
-
-
 		
-		<!-- Latest compiled JavaScript -->
-		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		  <!-- Latest compiled JavaScript -->
+		  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
 
 
   <body>
-    <h1>sheGineers</h1>
+    <a data-toggle="tab" href="#home" class="ui-link logo"><img src="/assets/logo-eca47390c67f8a707bfc0fe199070062bbad2e1c6b18d8b1c2ad78ee396fef5d.png" alt="Logo eca47390c67f8a707bfc0fe199070062bbad2e1c6b18d8b1c2ad78ee396fef5d"></a>
+
+    <h1>sheGineers</h1> 
 
     <ul class="nav nav-tabs">
-	  <li><a data-toggle="tab" href="#home">Home</a></li>
-	  <li><a data-toggle="tab" href="#about">About</a></li>
-	  <li><a data-toggle="tab" href="#my she-roes">My She-roes</a></li>
-	  <li><a data-toggle="tab" href="#learn">Learn</a></li>
-	</ul>
-  
-	 <div id="container">
+      <li><a data-toggle="tab" href="#home">Home</a></li>
+  	  <li><a data-toggle="tab" href="#about">About</a></li>
+  	  <li><a data-toggle="tab" href="#my-she-roes">My She-roes</a></li>
+  	  <li><a data-toggle="tab" href="#learn">Learn</a></li>
+      <li><a data-toggle="tab" href="#become">Become a She-ro!</a></li>
+    </ul>
 
+	 <div id="container">
     <div class="tab-content">
     <div role="tabpanel" class="tab-pane active" id="home">
       <% @sheroes.each do |shero| %>
         <div class="buddy" style="display: block;">
           <div class="avatar" style="display: block; background-image:url(<%= shero.pic %>)"></div>
           <div>
-          	<h3> <%= shero.full_name %></h2>
-          	<h4> <%= shero.title %></h3>
+          	<h3><%= shero.full_name %></h3>
+          	<h4><%= shero.title %></h4>
           	<span><%= shero.bio %></span>
           </div>
         </div>
       <% end %>
     </div>
-    <div role="tabpanel" class="tab-pane" id="about">adasdf</div>
-    <div role="tabpanel" class="tab-pane" id="my she-roes">...</div>
-    <div role="tabpanel" class="tab-pane" id="learn">...</div>
+
+    <div role="tabpanel" class="tab-pane" id="home"></div>
+
+    <div role="tabpanel" class="tab-pane" id="about">
+      <div class="buddy buddy-content" style="display:block">
+        <h3>Is this for you?</h3>
+        <p>
+          Wouldn't it be great if you have a location where you could find out about the <i>amazing women in STEM fields?</i>
+        </p>
+        <h4><i>WAIT NO LONGER! SheGineer is here!</i></h4>
+        <p>
+          SheGineer is an app that one can learn all about the strong STEM women out in the world and get excited to be in STEM. Most people have heard of Steve Jobs, Bill Gates but have you heard of Marissa Meyers or Fabiola Gianotti? Well now you can! The inspiration for this effort was to have a place where young women could find strong women to look up to and potentially try to follow their same paths.
+        </p>
+        <img src="http://www.gamesprays.com/images/icons/blu-engineer-icon-3289_preview.png">
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="become">
+      <h1>Do you want to be an inspiration for women? Then we'd love to have you!</h1>
+      <form action="/new_shero" method="post">
+          <div class="form-group">
+            <label>First name:</label>
+            <input class="form-control" type="text" name="first_name">
+          </div>
+          <div class="form-group">
+            <label>Last name:</label>
+            <input class="form-control" type="text" name="last_name">
+          </div>
+          <div class="form-group">
+            <label>Title:</label>
+            <input class="form-control" type="text" name="title">
+          </div>
+          <div class="form-group">
+            <label>Company:</label>
+            <input class="form-control" type="text" name="company">
+          </div>
+          <div class="form-group">
+            <label>Bio:</label>
+            <input class="form-control" type="text" name="bio">
+          </div>
+          <div class="form-group">
+            <label>Facebook:</label>
+            <input class="form-control" type="text" name="facebook_url">
+          </div>
+          <div class="form-group">
+            <label>Twitter:</label>
+            <input class="form-control" type="text" name="twitter_url">
+          </div>
+          <div class="form-group">
+            <label>LinkedIn:</label>
+            <input class="form-control" type="text" name="linkedin">
+          </div>
+          <div class="form-group">
+            <label>Wiki:</label>
+            <input class="form-control" type="text" name="wiki">
+          </div>
+          <div class="form-group">
+            <label>Website:</label>
+            <input class="form-control" type="text" name="website">
+          </div>
+          
+             <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="my-she-roes">
+		<% @sheroes.each do |shero| %>
+        	<div class="panel panel-primary">
+					<div class="panel-heading">
+		    			<h3 class="panel-title"><%= shero.full_name %></h3>
+		    			<h3 class="panel-title"><%= shero.title %></h3>
+	  			</div>
+	  			<div class="panel-body">
+	    			<img src="<%= shero.pic %>" class="img-rounded" alt="<%= shero.full_name %>" width="300" height="300"> 
+	    			<div><%= shero.bio %></div>
+
+	  			</div>
+			</div>
+      		<% end %>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="learn">
+      <div class="buddy buddy-content" style="display:block">
+        <h3>Further Learning</h3>
+        <p>Learn to Code:</p>
+          <ul class="links">
+            <li><a href="https://www.codeschool.com/">Code School</a></li>
+            <li><a href="https://www.codecademy.com/">Code Academy</a></li>
+          </ul>
+        <p>Careers in STEM:</p>
+          <ul class="links">
+            <li><a href="http://money.usnews.com/careers/best-jobs/rankings/best-stem-jobs">Top Jobs</a></li>
+            <li><a href="http://www.iseek.org/careers/stemcareers">General List</a></li>
+          </ul>
+        <p>Info for your Brain Space</p>
+          <ul class="links">
+            <li><a href="https://www.youtube.com/watch?v=j50ZssEojtM">Understanding the Large Hadron Collider</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/42_(number)">Secret to Happiness and Immortality</a></li>
+          </ul>
+      </div>
+    </div>
   </div>
-  	</div>
 
 
-<script>
-$(document).ready(function(){
-  $('#someTab').tab('show');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    $(".buddy").on("swiperight",function(){
-      $(this).addClass('rotate-left').delay(700).fadeOut(1);
-      $('.buddy').find('.status').remove();
-
-      $(this).append('<div class="status like">Like!</div>');      
-      if ( $(this).is(':last-child') ) {
-        $('.buddy:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
-       } else {
-          $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
-       }
-    });  
-
-   $(".buddy").on("swipeleft",function(){
-    $(this).addClass('rotate-right').delay(700).fadeOut(1);
-    $('.buddy').find('.status').remove();
-    $(this).append('<div class="status dislike">Dislike!</div>');
-
-    if ( $(this).is(':last-child') ) {
-     $('.buddy:nth-child(1)').removeClass ('rotate-left rotate-right').fadeIn(300);
-      alert('Na-na!');
-     } else {
-        $(this).next().removeClass('rotate-left rotate-right').fadeIn(400);
-    } 
-  });
-
-});
-</script>
-    
-    
+  <script>
+    $(document).ready(function() {
+        $('.ui-loader').hide();
+      });
+  </script>
   </body>
 
 
