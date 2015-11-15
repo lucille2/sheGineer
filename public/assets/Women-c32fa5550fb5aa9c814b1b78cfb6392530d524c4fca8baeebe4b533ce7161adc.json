@@ -1,0 +1,69 @@
+{
+    "womenInTech": [
+        {
+            "pic": "https://media.licdn.com/media/p/5/005/059/160/10fdf96.jpg",
+            "first_name": "Gayle L.",
+            "last_name": "McDowell",
+            "title": "Founder, Author, Programmer, Consultant, Speaker",
+            "company": "CareerCup",
+            "bio": "Gayle Laakmann McDowell is the founder/CEO of CareerCup.com and the author of Cracking the * interview books (Cracking the Coding Interview, Cracking the PM Interview, and Cracking the Tech Career)",
+            "facebook_url": "https://www.facebook.com/gayle",
+            "twitter_url": "https://twitter.com/gayle?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+            "linkedin": "https://www.linkedin.com/in/gaylemcd",
+            "wiki": "https://en.wikipedia.org/wiki/User:Vintelok/Gayle_Laakmann_McDowell",
+            "website": "http://www.gayle.com/"
+        },
+        {
+            "pic": "https://media.licdn.com/media/p/3/000/28c/383/28b0d6f.jpg",
+            "first_name": "Kyla",
+            "last_name": "McMullen",
+            "title": "Assistant Professor",
+            "company": "University of Florida",
+            "bio": "Kyla McMullen, CSE MSE 2007, PhD 2012, has become the first African American woman at the University of Michigan to graduate with a PhD in Computer Science and Engineering. She is now an Assistant Professor at Clemson University's School of Computing, where her primary research interests lie in rendering spatial audio virtually to enhance virtual environments and to sonify information sources.",
+            "facebook_url": "https://www.facebook.com/natural.woman",
+            "twitter_url": "https://twitter.com/Dr_Kyla?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+            "linkedin": "https://www.linkedin.com/pub/kyla-mcmullen/22/22/169",
+            "wiki": "",
+            "website": "http://www.kylamcmullen.com/Kyla_McMullen/Research.html"
+        },
+        {
+            "pic": "https://media.licdn.com/media/p/7/000/1c5/388/229d31a.jpg",
+            "first_name": "Window",
+            "last_name": "Snyder",
+            "title": "Chief Security Officer",
+            "company": "Fastly",
+            "bio": "Mwende Window Snyder is Chief Security Officer at Fastly and the former Chief Security Something-Or-Other[1] (a tongue-in-cheek Chief Security Officer title) at Mozilla Corporation. She is co-author of Threat Modeling, a standard manual on application security.",
+            "facebook_url": "",
+            "twitter_url": "https://twitter.com/window?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+            "linkedin": "https://www.linkedin.com/profile/view?id=ACgAAAAbkkkBDQop6IprAtgmJbh5j8mU2iqK4rY&authType=name&authToken=J5Eh",
+            "wiki": "https://en.wikipedia.org/wiki/Window_Snyder",
+            "website": ""
+        },
+        {
+            "pic": "https://media.licdn.com/media/p/3/000/09a/11b/2bdd71b.jpg",
+            "first_name": "Nanea",
+            "last_name": "Reeves",
+            "title": "President & COO",
+            "company": "textPlus",
+            "bio": "Nanea Reeves has a storied career in senior leadership roles at technology companies.",
+            "facebook_url": "https://www.facebook.com/nanea.reeves",
+            "twitter_url": "https://twitter.com/nanea?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+            "linkedin": "https://www.linkedin.com/in/naneareeves",
+            "wiki": "",
+            "website": ""
+        },
+        {
+            "pic": "http://paolaelefante.com/wp-content/uploads/2015/01/fabiola-gianotti.jpg",
+            "first_name": "Fabiola",
+            "last_name": "Gianotti",
+            "title": "Experimental Particle Physicist",
+            "company": "CERN",
+            "bio": "Fabiola Gianotti received a Ph.D. in experimental particle physics from the University of Milan in 1989. Since 1996, following several postdoctoral positions, including a fellowship at CERN, she has been a research physicist in the Physics Department of CERN, the European Organisation for Nuclear Research, and since August 2013 an honorary Professor at the University of Edinburgh.",
+            "facebook_url": "https://www.facebook.com/FabiolaGiannottiPresidenteDellaRepubblica",
+            "twitter_url": "https://twitter.com/fabiolagianotti",
+            "linkedin": "",
+            "wiki": "https://en.wikipedia.org/wiki/Fabiola_Gianotti",
+            "website": ""
+        }
+    ]
+}
